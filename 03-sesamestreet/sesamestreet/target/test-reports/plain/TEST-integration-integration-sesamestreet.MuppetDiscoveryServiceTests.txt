@@ -1,0 +1,37 @@
+Testsuite: sesamestreet.MuppetDiscoveryServiceTests
+Tests run: 1, Failures: 1, Errors: 0, Time elapsed: 0,078 sec
+------------- Standard Output ---------------
+--Output from testLookForPerfectAndRelatedMuppets--
+Hibernate: insert into muppet (id, version, about, color, gender, has_fur, name, picture) values (null, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: insert into muppet (id, version, about, color, gender, has_fur, name, picture) values (null, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: insert into muppet (id, version, about, color, gender, has_fur, name, picture) values (null, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: insert into muppet (id, version, about, color, gender, has_fur, name, picture) values (null, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: insert into muppet (id, version, about, color, gender, has_fur, name, picture) values (null, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: insert into muppet (id, version, about, color, gender, has_fur, name, picture) values (null, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: select this_.id as id1_0_0_, this_.version as version2_0_0_, this_.about as about3_0_0_, this_.color as color4_0_0_, this_.gender as gender5_0_0_, this_.has_fur as has_fur6_0_0_, this_.name as name7_0_0_, this_.picture as picture8_0_0_ from muppet this_ where (lower(this_.color)=? and this_.has_fur=?) limit ?
+Hibernate: select this_.id as id1_0_0_, this_.version as version2_0_0_, this_.about as about3_0_0_, this_.color as color4_0_0_, this_.gender as gender5_0_0_, this_.has_fur as has_fur6_0_0_, this_.name as name7_0_0_, this_.picture as picture8_0_0_ from muppet this_ where (this_.color like ? or this_.has_fur=?)
+------------- ---------------- ---------------
+------------- Standard Error -----------------
+--Output from testLookForPerfectAndRelatedMuppets--
+------------- ---------------- ---------------
+
+Testcase: testLookForPerfectAndRelatedMuppets took 0,078 sec
+	FAILED
+Assertion failed: 
+
+assert 3 == relatedMuppets.size()
+         |  |              |
+         |  |              5
+         |  [sesamestreet.Muppet : 1, sesamestreet.Muppet : 2, sesamestreet.Muppet : 3, sesamestreet.Muppet : 4, sesamestreet.Muppet : 8]
+         false
+
+junit.framework.AssertionFailedError: Assertion failed: 
+
+assert 3 == relatedMuppets.size()
+         |  |              |
+         |  |              5
+         |  [sesamestreet.Muppet : 1, sesamestreet.Muppet : 2, sesamestreet.Muppet : 3, sesamestreet.Muppet : 4, sesamestreet.Muppet : 8]
+         false
+
+	at sesamestreet.MuppetDiscoveryServiceTests.testLookForPerfectAndRelatedMuppets(MuppetDiscoveryServiceTests.groovy:36)
+

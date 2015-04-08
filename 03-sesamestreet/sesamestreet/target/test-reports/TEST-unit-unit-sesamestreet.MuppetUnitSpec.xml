@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuite errors="0" failures="0" hostname="satellite-z30-a" name="sesamestreet.MuppetUnitSpec" tests="3" time="0.399" timestamp="2015-04-08T22:28:45">
+  <properties />
+  <testcase classname="sesamestreet.MuppetUnitSpec" name="Ernie validates OK" time="0.181" />
+  <testcase classname="sesamestreet.MuppetUnitSpec" name="Bert fails on validate" time="0.035" />
+  <testcase classname="sesamestreet.MuppetUnitSpec" name="validate several of them" time="0.168" />
+  <system-out><![CDATA[--Output from Ernie validates OK--
+--Output from Bert fails on validate--
+--Output from validate several of them--
+]]></system-out>
+  <system-err><![CDATA[--Output from Ernie validates OK--
+--Output from Bert fails on validate--
+--Output from validate several of them--
+]]></system-err>
+</testsuite>

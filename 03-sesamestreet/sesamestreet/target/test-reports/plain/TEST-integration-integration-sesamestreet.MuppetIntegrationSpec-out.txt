@@ -1,0 +1,4 @@
+--Output from test save several muppets--
+Hibernate: insert into muppet (id, version, about, color, gender, has_fur, name, picture) values (null, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: insert into muppet (id, version, about, color, gender, has_fur, name, picture) values (null, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: insert into muppet (id, version, about, color, gender, has_fur, name, picture) values (null, ?, ?, ?, ?, ?, ?, ?)

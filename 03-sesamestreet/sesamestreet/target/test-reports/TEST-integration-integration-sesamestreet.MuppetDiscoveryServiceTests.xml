@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuite errors="0" failures="1" hostname="satellite-z30-a" name="sesamestreet.MuppetDiscoveryServiceTests" tests="1" time="0.078" timestamp="2015-04-08T22:28:57">
+  <properties />
+  <testcase classname="sesamestreet.MuppetDiscoveryServiceTests" name="testLookForPerfectAndRelatedMuppets" time="0.078">
+    <failure message="Assertion failed: &#xa;&#xa;assert 3 == relatedMuppets.size()&#xa;         |  |              |&#xa;         |  |              5&#xa;         |  [sesamestreet.Muppet : 1, sesamestreet.Muppet : 2, sesamestreet.Muppet : 3, sesamestreet.Muppet : 4, sesamestreet.Muppet : 8]&#xa;         false&#xa;" type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError: Assertion failed: 
+
+assert 3 == relatedMuppets.size()
+         |  |              |
+         |  |              5
+         |  [sesamestreet.Muppet : 1, sesamestreet.Muppet : 2, sesamestreet.Muppet : 3, sesamestreet.Muppet : 4, sesamestreet.Muppet : 8]
+         false
+
+	at sesamestreet.MuppetDiscoveryServiceTests.testLookForPerfectAndRelatedMuppets(MuppetDiscoveryServiceTests.groovy:36)
+</failure>
+  </testcase>
+  <system-out><![CDATA[--Output from testLookForPerfectAndRelatedMuppets--
+Hibernate: insert into muppet (id, version, about, color, gender, has_fur, name, picture) values (null, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: insert into muppet (id, version, about, color, gender, has_fur, name, picture) values (null, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: insert into muppet (id, version, about, color, gender, has_fur, name, picture) values (null, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: insert into muppet (id, version, about, color, gender, has_fur, name, picture) values (null, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: insert into muppet (id, version, about, color, gender, has_fur, name, picture) values (null, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: insert into muppet (id, version, about, color, gender, has_fur, name, picture) values (null, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: select this_.id as id1_0_0_, this_.version as version2_0_0_, this_.about as about3_0_0_, this_.color as color4_0_0_, this_.gender as gender5_0_0_, this_.has_fur as has_fur6_0_0_, this_.name as name7_0_0_, this_.picture as picture8_0_0_ from muppet this_ where (lower(this_.color)=? and this_.has_fur=?) limit ?
+Hibernate: select this_.id as id1_0_0_, this_.version as version2_0_0_, this_.about as about3_0_0_, this_.color as color4_0_0_, this_.gender as gender5_0_0_, this_.has_fur as has_fur6_0_0_, this_.name as name7_0_0_, this_.picture as picture8_0_0_ from muppet this_ where (this_.color like ? or this_.has_fur=?)
+]]></system-out>
+  <system-err><![CDATA[--Output from testLookForPerfectAndRelatedMuppets--
+]]></system-err>
+</testsuite>

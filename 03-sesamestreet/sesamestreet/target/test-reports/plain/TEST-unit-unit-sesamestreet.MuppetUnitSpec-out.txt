@@ -1,0 +1,3 @@
+--Output from Ernie validates OK--
+--Output from Bert fails on validate--
+--Output from validate several of them--

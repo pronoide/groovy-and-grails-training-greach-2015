@@ -1,0 +1,13 @@
+Testsuite: sesamestreet.MuppetIntegrationSpec
+Tests run: 1, Failures: 0, Errors: 0, Time elapsed: 0,058 sec
+------------- Standard Output ---------------
+--Output from test save several muppets--
+Hibernate: insert into muppet (id, version, about, color, gender, has_fur, name, picture) values (null, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: insert into muppet (id, version, about, color, gender, has_fur, name, picture) values (null, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: insert into muppet (id, version, about, color, gender, has_fur, name, picture) values (null, ?, ?, ?, ?, ?, ?, ?)
+------------- ---------------- ---------------
+------------- Standard Error -----------------
+--Output from test save several muppets--
+------------- ---------------- ---------------
+
+Testcase: test save several muppets took 0,058 sec

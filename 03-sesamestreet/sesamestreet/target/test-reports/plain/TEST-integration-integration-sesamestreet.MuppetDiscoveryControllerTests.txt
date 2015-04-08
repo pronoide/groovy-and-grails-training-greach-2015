@@ -1,0 +1,18 @@
+Testsuite: sesamestreet.MuppetDiscoveryControllerTests
+Tests run: 2, Failures: 0, Errors: 0, Time elapsed: 1,586 sec
+------------- Standard Output ---------------
+--Output from testNotFoundPerfectMuppet--
+Hibernate: insert into muppet (id, version, about, color, gender, has_fur, name, picture) values (null, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: select this_.id as id1_0_0_, this_.version as version2_0_0_, this_.about as about3_0_0_, this_.color as color4_0_0_, this_.gender as gender5_0_0_, this_.has_fur as has_fur6_0_0_, this_.name as name7_0_0_, this_.picture as picture8_0_0_ from muppet this_ where (lower(this_.color)=? and this_.has_fur=?) limit ?
+Hibernate: select this_.id as id1_0_0_, this_.version as version2_0_0_, this_.about as about3_0_0_, this_.color as color4_0_0_, this_.gender as gender5_0_0_, this_.has_fur as has_fur6_0_0_, this_.name as name7_0_0_, this_.picture as picture8_0_0_ from muppet this_ where (this_.color like ? or this_.has_fur=?)
+--Output from testFoundPerfectMuppet--
+Hibernate: insert into muppet (id, version, about, color, gender, has_fur, name, picture) values (null, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: select this_.id as id1_0_0_, this_.version as version2_0_0_, this_.about as about3_0_0_, this_.color as color4_0_0_, this_.gender as gender5_0_0_, this_.has_fur as has_fur6_0_0_, this_.name as name7_0_0_, this_.picture as picture8_0_0_ from muppet this_ where (lower(this_.color)=? and this_.has_fur=?) limit ?
+------------- ---------------- ---------------
+------------- Standard Error -----------------
+--Output from testNotFoundPerfectMuppet--
+--Output from testFoundPerfectMuppet--
+------------- ---------------- ---------------
+
+Testcase: testNotFoundPerfectMuppet took 1,549 sec
+Testcase: testFoundPerfectMuppet took 0,034 sec

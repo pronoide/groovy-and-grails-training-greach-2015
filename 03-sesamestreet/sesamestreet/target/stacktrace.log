@@ -1,0 +1,436 @@
+2015-04-08 23:31:23,016 [main] ERROR StackTrace  - Full Stack Trace:
+Assertion failed: 
+
+assert perfectMuppet != null
+       |             |
+       null          false
+
+	at org.codehaus.groovy.runtime.InvokerHelper.assertFailed(InvokerHelper.java:398)
+	at org.codehaus.groovy.runtime.ScriptBytecodeAdapter.assertFailed(ScriptBytecodeAdapter.java:648)
+	at sesamestreet.MuppetDiscoveryServiceUnitTests.testLookForPerfectAndRelatedMuppets(MuppetDiscoveryServiceUnitTests.groovy:32)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.springsource.loaded.ri.ReflectiveInterceptor.jlrMethodInvoke(ReflectiveInterceptor.java:1270)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:47)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:44)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	at org.junit.internal.runners.statements.RunBefores$evaluate.call(Unknown Source)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:45)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:108)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:112)
+	at grails.test.runtime.TestRuntimeJunitAdapter$1$2.evaluate(TestRuntimeJunitAdapter.groovy:49)
+	at org.junit.rules.RunRules.evaluate(RunRules.java:20)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:271)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:70)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:50)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.springsource.loaded.ri.ReflectiveInterceptor.jlrMethodInvoke(ReflectiveInterceptor.java:1270)
+	at org.codehaus.groovy.runtime.callsite.PojoMetaMethodSite$PojoCachedMethodSiteNoUnwrapNoCoerce.invoke(PojoMetaMethodSite.java:230)
+	at org.codehaus.groovy.runtime.callsite.PojoMetaMethodSite.call(PojoMetaMethodSite.java:53)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:45)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:108)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:112)
+	at grails.test.runtime.TestRuntimeJunitAdapter$3$4.evaluate(TestRuntimeJunitAdapter.groovy:76)
+	at org.junit.rules.RunRules.evaluate(RunRules.java:20)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:309)
+	at org.junit.runners.Suite.runChild(Suite.java:127)
+	at org.junit.runners.Suite.runChild(Suite.java:26)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:309)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:160)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:138)
+	at org.junit.runner.JUnitCore$run$0.call(Unknown Source)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:45)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:108)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:116)
+	at org.codehaus.groovy.grails.test.spock.GrailsSpecTestType.doRun(GrailsSpecTestType.groovy:147)
+	at org.codehaus.groovy.grails.test.support.GrailsTestTypeSupport.run(GrailsTestTypeSupport.groovy:121)
+	at org.codehaus.groovy.grails.test.runner.GrailsProjectTestRunner.runTests(GrailsProjectTestRunner.groovy:415)
+	at org.codehaus.groovy.grails.test.runner.GrailsProjectTestRunner.processTests(GrailsProjectTestRunner.groovy:395)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.springsource.loaded.ri.ReflectiveInterceptor.jlrMethodInvoke(ReflectiveInterceptor.java:1270)
+	at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:90)
+	at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:324)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1207)
+	at groovy.lang.ExpandoMetaClass.invokeMethod(ExpandoMetaClass.java:1110)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1016)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1152)
+	at groovy.lang.ExpandoMetaClass.invokeMethod(ExpandoMetaClass.java:1110)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1016)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaClassSite.callCurrent(PogoMetaClassSite.java:66)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallCurrent(CallSiteArray.java:49)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:133)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:141)
+	at org.codehaus.groovy.grails.test.runner.GrailsProjectTestRunner$_runAllTests_closure7.doCall(GrailsProjectTestRunner.groovy:313)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.springsource.loaded.ri.ReflectiveInterceptor.jlrMethodInvoke(ReflectiveInterceptor.java:1270)
+	at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:90)
+	at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:324)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1207)
+	at groovy.lang.ExpandoMetaClass.invokeMethod(ExpandoMetaClass.java:1110)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1016)
+	at groovy.lang.Closure.call(Closure.java:423)
+	at org.codehaus.groovy.runtime.DefaultGroovyMethods.callClosureForMapEntry(DefaultGroovyMethods.java:4271)
+	at org.codehaus.groovy.runtime.DefaultGroovyMethods.each(DefaultGroovyMethods.java:1408)
+	at org.codehaus.groovy.runtime.dgm$151.invoke(Unknown Source)
+	at org.codehaus.groovy.runtime.callsite.PojoMetaMethodSite$PojoMetaMethodSiteNoUnwrapNoCoerce.invoke(PojoMetaMethodSite.java:271)
+	at org.codehaus.groovy.runtime.callsite.PojoMetaMethodSite.call(PojoMetaMethodSite.java:53)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:45)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:108)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:116)
+	at org.codehaus.groovy.grails.test.runner.GrailsProjectTestRunner.runAllTests(GrailsProjectTestRunner.groovy:299)
+	at org.codehaus.groovy.grails.test.runner.GrailsProjectTestRunner.runAllTests(GrailsProjectTestRunner.groovy:214)
+	at org.codehaus.groovy.grails.test.runner.GrailsProjectTestRunner.runAllTests(GrailsProjectTestRunner.groovy)
+	at org.codehaus.groovy.grails.test.runner.GrailsProjectTestRunner$runAllTests$0.call(Unknown Source)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:45)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:108)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:116)
+	at org.codehaus.groovy.grails.cli.fork.testing.ForkedGrailsTestRunner.runInstance(ForkedGrailsTestRunner.groovy:128)
+	at org.codehaus.groovy.grails.cli.fork.ForkedGrailsProjectClassExecutor.run(ForkedGrailsProjectClassExecutor.groovy:74)
+	at org.codehaus.groovy.grails.cli.fork.testing.ForkedGrailsTestRunner.main(ForkedGrailsTestRunner.groovy:75)
+2015-04-08 23:31:23,023 [main] ERROR StackTrace  - Full Stack Trace:
+Assertion failed: 
+
+assert perfectMuppet != null
+       |             |
+       null          false
+
+	at sesamestreet.MuppetDiscoveryServiceUnitTests.testLookForPerfectAndRelatedMuppets(MuppetDiscoveryServiceUnitTests.groovy:32)
+2015-04-08 23:31:23,027 [main] ERROR StackTrace  - Full Stack Trace:
+junit.framework.AssertionFailedError: Assertion failed: 
+
+assert perfectMuppet != null
+       |             |
+       null          false
+
+	at sesamestreet.MuppetDiscoveryServiceUnitTests.testLookForPerfectAndRelatedMuppets(MuppetDiscoveryServiceUnitTests.groovy:32)
+2015-04-08 23:31:23,028 [main] ERROR StackTrace  - Full Stack Trace:
+junit.framework.AssertionFailedError: Assertion failed: 
+
+assert perfectMuppet != null
+       |             |
+       null          false
+
+	at sesamestreet.MuppetDiscoveryServiceUnitTests.testLookForPerfectAndRelatedMuppets(MuppetDiscoveryServiceUnitTests.groovy:32)
+2015-04-08 23:31:23,045 [main] ERROR StackTrace  - Full Stack Trace:
+junit.framework.AssertionFailedError: Assertion failed: 
+
+assert perfectMuppet != null
+       |             |
+       null          false
+
+	at sesamestreet.MuppetDiscoveryServiceUnitTests.testLookForPerfectAndRelatedMuppets(MuppetDiscoveryServiceUnitTests.groovy:32)
+2015-04-08 23:31:23,045 [main] ERROR StackTrace  - Full Stack Trace:
+junit.framework.AssertionFailedError: Assertion failed: 
+
+assert perfectMuppet != null
+       |             |
+       null          false
+
+	at sesamestreet.MuppetDiscoveryServiceUnitTests.testLookForPerfectAndRelatedMuppets(MuppetDiscoveryServiceUnitTests.groovy:32)
+2015-04-08 23:59:45,853 [main] ERROR StackTrace  - Full Stack Trace:
+Assertion failed: 
+
+assert 3 == relatedMuppets.size()
+         |  |              |
+         |  |              5
+         |  [sesamestreet.Muppet : 1, sesamestreet.Muppet : 2, sesamestreet.Muppet : 3, sesamestreet.Muppet : 4, sesamestreet.Muppet : 8]
+         false
+
+	at org.codehaus.groovy.runtime.InvokerHelper.assertFailed(InvokerHelper.java:398)
+	at org.codehaus.groovy.runtime.ScriptBytecodeAdapter.assertFailed(ScriptBytecodeAdapter.java:648)
+	at sesamestreet.MuppetDiscoveryServiceTests.testLookForPerfectAndRelatedMuppets(MuppetDiscoveryServiceTests.groovy:36)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.springsource.loaded.ri.ReflectiveInterceptor.jlrMethodInvoke(ReflectiveInterceptor.java:1270)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:47)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:44)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:271)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:70)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:50)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:309)
+	at org.junit.runners.Suite.runChild(Suite.java:127)
+	at org.junit.runners.Suite.runChild(Suite.java:26)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:309)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:160)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:138)
+	at org.junit.runner.JUnitCore$run$0.call(Unknown Source)
+	at org.codehaus.groovy.grails.test.spock.GrailsSpecTestType.doRun(GrailsSpecTestType.groovy:147)
+	at org.codehaus.groovy.grails.test.support.GrailsTestTypeSupport.run(GrailsTestTypeSupport.groovy:121)
+	at org.codehaus.groovy.grails.test.runner.GrailsProjectTestRunner.runTests(GrailsProjectTestRunner.groovy:415)
+	at org.codehaus.groovy.grails.test.runner.GrailsProjectTestRunner.processTests(GrailsProjectTestRunner.groovy:395)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.springsource.loaded.ri.ReflectiveInterceptor.jlrMethodInvoke(ReflectiveInterceptor.java:1270)
+	at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:90)
+	at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:324)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1207)
+	at groovy.lang.ExpandoMetaClass.invokeMethod(ExpandoMetaClass.java:1110)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1016)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1152)
+	at groovy.lang.ExpandoMetaClass.invokeMethod(ExpandoMetaClass.java:1110)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1016)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaClassSite.callCurrent(PogoMetaClassSite.java:66)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:141)
+	at org.codehaus.groovy.grails.test.runner.GrailsProjectTestRunner$_runAllTests_closure7.doCall(GrailsProjectTestRunner.groovy:313)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.springsource.loaded.ri.ReflectiveInterceptor.jlrMethodInvoke(ReflectiveInterceptor.java:1270)
+	at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:90)
+	at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:324)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1207)
+	at groovy.lang.ExpandoMetaClass.invokeMethod(ExpandoMetaClass.java:1110)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1016)
+	at groovy.lang.Closure.call(Closure.java:423)
+	at org.codehaus.groovy.runtime.DefaultGroovyMethods.callClosureForMapEntry(DefaultGroovyMethods.java:4271)
+	at org.codehaus.groovy.runtime.DefaultGroovyMethods.each(DefaultGroovyMethods.java:1408)
+	at org.codehaus.groovy.runtime.dgm$151.invoke(Unknown Source)
+	at org.codehaus.groovy.runtime.callsite.PojoMetaMethodSite$PojoMetaMethodSiteNoUnwrapNoCoerce.invoke(PojoMetaMethodSite.java:271)
+	at org.codehaus.groovy.runtime.callsite.PojoMetaMethodSite.call(PojoMetaMethodSite.java:53)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:45)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:108)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:116)
+	at org.codehaus.groovy.grails.test.runner.GrailsProjectTestRunner.runAllTests(GrailsProjectTestRunner.groovy:299)
+	at org.codehaus.groovy.grails.test.runner.GrailsProjectTestRunner.runAllTests(GrailsProjectTestRunner.groovy:214)
+	at org.codehaus.groovy.grails.test.runner.GrailsProjectTestRunner.runAllTests(GrailsProjectTestRunner.groovy)
+	at org.codehaus.groovy.grails.test.runner.GrailsProjectTestRunner$runAllTests$0.call(Unknown Source)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:45)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:108)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:116)
+	at org.codehaus.groovy.grails.cli.fork.testing.ForkedGrailsTestRunner.runInstance(ForkedGrailsTestRunner.groovy:128)
+	at org.codehaus.groovy.grails.cli.fork.ForkedGrailsProjectClassExecutor.run(ForkedGrailsProjectClassExecutor.groovy:74)
+	at org.codehaus.groovy.grails.cli.fork.testing.ForkedGrailsTestRunner.main(ForkedGrailsTestRunner.groovy:75)
+2015-04-08 23:59:45,865 [main] ERROR StackTrace  - Full Stack Trace:
+Assertion failed: 
+
+assert 3 == relatedMuppets.size()
+         |  |              |
+         |  |              5
+         |  [sesamestreet.Muppet : 1, sesamestreet.Muppet : 2, sesamestreet.Muppet : 3, sesamestreet.Muppet : 4, sesamestreet.Muppet : 8]
+         false
+
+	at sesamestreet.MuppetDiscoveryServiceTests.testLookForPerfectAndRelatedMuppets(MuppetDiscoveryServiceTests.groovy:36)
+2015-04-08 23:59:45,867 [main] ERROR StackTrace  - Full Stack Trace:
+junit.framework.AssertionFailedError: Assertion failed: 
+
+assert 3 == relatedMuppets.size()
+         |  |              |
+         |  |              5
+         |  [sesamestreet.Muppet : 1, sesamestreet.Muppet : 2, sesamestreet.Muppet : 3, sesamestreet.Muppet : 4, sesamestreet.Muppet : 8]
+         false
+
+	at sesamestreet.MuppetDiscoveryServiceTests.testLookForPerfectAndRelatedMuppets(MuppetDiscoveryServiceTests.groovy:36)
+2015-04-08 23:59:45,867 [main] ERROR StackTrace  - Full Stack Trace:
+junit.framework.AssertionFailedError: Assertion failed: 
+
+assert 3 == relatedMuppets.size()
+         |  |              |
+         |  |              5
+         |  [sesamestreet.Muppet : 1, sesamestreet.Muppet : 2, sesamestreet.Muppet : 3, sesamestreet.Muppet : 4, sesamestreet.Muppet : 8]
+         false
+
+	at sesamestreet.MuppetDiscoveryServiceTests.testLookForPerfectAndRelatedMuppets(MuppetDiscoveryServiceTests.groovy:36)
+2015-04-08 23:59:45,883 [main] ERROR StackTrace  - Full Stack Trace:
+junit.framework.AssertionFailedError: Assertion failed: 
+
+assert 3 == relatedMuppets.size()
+         |  |              |
+         |  |              5
+         |  [sesamestreet.Muppet : 1, sesamestreet.Muppet : 2, sesamestreet.Muppet : 3, sesamestreet.Muppet : 4, sesamestreet.Muppet : 8]
+         false
+
+	at sesamestreet.MuppetDiscoveryServiceTests.testLookForPerfectAndRelatedMuppets(MuppetDiscoveryServiceTests.groovy:36)
+2015-04-08 23:59:45,883 [main] ERROR StackTrace  - Full Stack Trace:
+junit.framework.AssertionFailedError: Assertion failed: 
+
+assert 3 == relatedMuppets.size()
+         |  |              |
+         |  |              5
+         |  [sesamestreet.Muppet : 1, sesamestreet.Muppet : 2, sesamestreet.Muppet : 3, sesamestreet.Muppet : 4, sesamestreet.Muppet : 8]
+         false
+
+	at sesamestreet.MuppetDiscoveryServiceTests.testLookForPerfectAndRelatedMuppets(MuppetDiscoveryServiceTests.groovy:36)
+2015-04-09 00:28:57,453 [main] ERROR StackTrace  - Full Stack Trace:
+Assertion failed: 
+
+assert 3 == relatedMuppets.size()
+         |  |              |
+         |  |              5
+         |  [sesamestreet.Muppet : 1, sesamestreet.Muppet : 2, sesamestreet.Muppet : 3, sesamestreet.Muppet : 4, sesamestreet.Muppet : 8]
+         false
+
+	at org.codehaus.groovy.runtime.InvokerHelper.assertFailed(InvokerHelper.java:398)
+	at org.codehaus.groovy.runtime.ScriptBytecodeAdapter.assertFailed(ScriptBytecodeAdapter.java:648)
+	at sesamestreet.MuppetDiscoveryServiceTests.testLookForPerfectAndRelatedMuppets(MuppetDiscoveryServiceTests.groovy:36)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.springsource.loaded.ri.ReflectiveInterceptor.jlrMethodInvoke(ReflectiveInterceptor.java:1270)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:47)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:44)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:271)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:70)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:50)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:309)
+	at org.junit.runners.Suite.runChild(Suite.java:127)
+	at org.junit.runners.Suite.runChild(Suite.java:26)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:309)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:160)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:138)
+	at org.junit.runner.JUnitCore$run$0.call(Unknown Source)
+	at org.codehaus.groovy.grails.test.spock.GrailsSpecTestType.doRun(GrailsSpecTestType.groovy:147)
+	at org.codehaus.groovy.grails.test.support.GrailsTestTypeSupport.run(GrailsTestTypeSupport.groovy:121)
+	at org.codehaus.groovy.grails.test.runner.GrailsProjectTestRunner.runTests(GrailsProjectTestRunner.groovy:415)
+	at org.codehaus.groovy.grails.test.runner.GrailsProjectTestRunner.processTests(GrailsProjectTestRunner.groovy:395)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.springsource.loaded.ri.ReflectiveInterceptor.jlrMethodInvoke(ReflectiveInterceptor.java:1270)
+	at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:90)
+	at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:324)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1207)
+	at groovy.lang.ExpandoMetaClass.invokeMethod(ExpandoMetaClass.java:1110)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1016)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1152)
+	at groovy.lang.ExpandoMetaClass.invokeMethod(ExpandoMetaClass.java:1110)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1016)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaClassSite.callCurrent(PogoMetaClassSite.java:66)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:141)
+	at org.codehaus.groovy.grails.test.runner.GrailsProjectTestRunner$_runAllTests_closure7.doCall(GrailsProjectTestRunner.groovy:313)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.springsource.loaded.ri.ReflectiveInterceptor.jlrMethodInvoke(ReflectiveInterceptor.java:1270)
+	at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:90)
+	at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:324)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1207)
+	at groovy.lang.ExpandoMetaClass.invokeMethod(ExpandoMetaClass.java:1110)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1016)
+	at groovy.lang.Closure.call(Closure.java:423)
+	at org.codehaus.groovy.runtime.DefaultGroovyMethods.callClosureForMapEntry(DefaultGroovyMethods.java:4271)
+	at org.codehaus.groovy.runtime.DefaultGroovyMethods.each(DefaultGroovyMethods.java:1408)
+	at org.codehaus.groovy.runtime.dgm$151.invoke(Unknown Source)
+	at org.codehaus.groovy.runtime.callsite.PojoMetaMethodSite$PojoMetaMethodSiteNoUnwrapNoCoerce.invoke(PojoMetaMethodSite.java:271)
+	at org.codehaus.groovy.runtime.callsite.PojoMetaMethodSite.call(PojoMetaMethodSite.java:53)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:45)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:108)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:116)
+	at org.codehaus.groovy.grails.test.runner.GrailsProjectTestRunner.runAllTests(GrailsProjectTestRunner.groovy:299)
+	at org.codehaus.groovy.grails.test.runner.GrailsProjectTestRunner.runAllTests(GrailsProjectTestRunner.groovy:214)
+	at org.codehaus.groovy.grails.test.runner.GrailsProjectTestRunner.runAllTests(GrailsProjectTestRunner.groovy)
+	at org.codehaus.groovy.grails.test.runner.GrailsProjectTestRunner$runAllTests$0.call(Unknown Source)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:45)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:108)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:116)
+	at org.codehaus.groovy.grails.cli.fork.testing.ForkedGrailsTestRunner.runInstance(ForkedGrailsTestRunner.groovy:128)
+	at org.codehaus.groovy.grails.cli.fork.ForkedGrailsProjectClassExecutor.run(ForkedGrailsProjectClassExecutor.groovy:74)
+	at org.codehaus.groovy.grails.cli.fork.testing.ForkedGrailsTestRunner.main(ForkedGrailsTestRunner.groovy:75)
+2015-04-09 00:28:57,459 [main] ERROR StackTrace  - Full Stack Trace:
+Assertion failed: 
+
+assert 3 == relatedMuppets.size()
+         |  |              |
+         |  |              5
+         |  [sesamestreet.Muppet : 1, sesamestreet.Muppet : 2, sesamestreet.Muppet : 3, sesamestreet.Muppet : 4, sesamestreet.Muppet : 8]
+         false
+
+	at sesamestreet.MuppetDiscoveryServiceTests.testLookForPerfectAndRelatedMuppets(MuppetDiscoveryServiceTests.groovy:36)
+2015-04-09 00:28:57,462 [main] ERROR StackTrace  - Full Stack Trace:
+junit.framework.AssertionFailedError: Assertion failed: 
+
+assert 3 == relatedMuppets.size()
+         |  |              |
+         |  |              5
+         |  [sesamestreet.Muppet : 1, sesamestreet.Muppet : 2, sesamestreet.Muppet : 3, sesamestreet.Muppet : 4, sesamestreet.Muppet : 8]
+         false
+
+	at sesamestreet.MuppetDiscoveryServiceTests.testLookForPerfectAndRelatedMuppets(MuppetDiscoveryServiceTests.groovy:36)
+2015-04-09 00:28:57,463 [main] ERROR StackTrace  - Full Stack Trace:
+junit.framework.AssertionFailedError: Assertion failed: 
+
+assert 3 == relatedMuppets.size()
+         |  |              |
+         |  |              5
+         |  [sesamestreet.Muppet : 1, sesamestreet.Muppet : 2, sesamestreet.Muppet : 3, sesamestreet.Muppet : 4, sesamestreet.Muppet : 8]
+         false
+
+	at sesamestreet.MuppetDiscoveryServiceTests.testLookForPerfectAndRelatedMuppets(MuppetDiscoveryServiceTests.groovy:36)
+2015-04-09 00:28:57,469 [main] ERROR StackTrace  - Full Stack Trace:
+junit.framework.AssertionFailedError: Assertion failed: 
+
+assert 3 == relatedMuppets.size()
+         |  |              |
+         |  |              5
+         |  [sesamestreet.Muppet : 1, sesamestreet.Muppet : 2, sesamestreet.Muppet : 3, sesamestreet.Muppet : 4, sesamestreet.Muppet : 8]
+         false
+
+	at sesamestreet.MuppetDiscoveryServiceTests.testLookForPerfectAndRelatedMuppets(MuppetDiscoveryServiceTests.groovy:36)
+2015-04-09 00:28:57,470 [main] ERROR StackTrace  - Full Stack Trace:
+junit.framework.AssertionFailedError: Assertion failed: 
+
+assert 3 == relatedMuppets.size()
+         |  |              |
+         |  |              5
+         |  [sesamestreet.Muppet : 1, sesamestreet.Muppet : 2, sesamestreet.Muppet : 3, sesamestreet.Muppet : 4, sesamestreet.Muppet : 8]
+         false
+
+	at sesamestreet.MuppetDiscoveryServiceTests.testLookForPerfectAndRelatedMuppets(MuppetDiscoveryServiceTests.groovy:36)

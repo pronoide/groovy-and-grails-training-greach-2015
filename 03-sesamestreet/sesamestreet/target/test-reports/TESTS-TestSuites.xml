@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuites>
+  <testsuite errors="0" failures="0" hostname="satellite-z30-a" id="0" name="MuppetDiscoveryControllerTests" package="sesamestreet" tests="2" time="1.586" timestamp="2015-04-08T22:28:55">
+      <properties />
+
+      <testcase classname="sesamestreet.MuppetDiscoveryControllerTests" name="testNotFoundPerfectMuppet" time="1.549" />
+
+      <testcase classname="sesamestreet.MuppetDiscoveryControllerTests" name="testFoundPerfectMuppet" time="0.034" />
+
+      <system-out><![CDATA[--Output from testNotFoundPerfectMuppet--
+Hibernate: insert into muppet (id, version, about, color, gender, has_fur, name, picture) values (null, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: select this_.id as id1_0_0_, this_.version as version2_0_0_, this_.about as about3_0_0_, this_.color as color4_0_0_, this_.gender as gender5_0_0_, this_.has_fur as has_fur6_0_0_, this_.name as name7_0_0_, this_.picture as picture8_0_0_ from muppet this_ where (lower(this_.color)=? and this_.has_fur=?) limit ?
+Hibernate: select this_.id as id1_0_0_, this_.version as version2_0_0_, this_.about as about3_0_0_, this_.color as color4_0_0_, this_.gender as gender5_0_0_, this_.has_fur as has_fur6_0_0_, this_.name as name7_0_0_, this_.picture as picture8_0_0_ from muppet this_ where (this_.color like ? or this_.has_fur=?)
+--Output from testFoundPerfectMuppet--
+Hibernate: insert into muppet (id, version, about, color, gender, has_fur, name, picture) values (null, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: select this_.id as id1_0_0_, this_.version as version2_0_0_, this_.about as about3_0_0_, this_.color as color4_0_0_, this_.gender as gender5_0_0_, this_.has_fur as has_fur6_0_0_, this_.name as name7_0_0_, this_.picture as picture8_0_0_ from muppet this_ where (lower(this_.color)=? and this_.has_fur=?) limit ?
+]]></system-out>
+
+      <system-err><![CDATA[--Output from testNotFoundPerfectMuppet--
+--Output from testFoundPerfectMuppet--
+]]></system-err>
+
+  </testsuite>
+  <testsuite errors="0" failures="1" hostname="satellite-z30-a" id="1" name="MuppetDiscoveryServiceTests" package="sesamestreet" tests="1" time="0.078" timestamp="2015-04-08T22:28:57">
+      <properties />
+
+      <testcase classname="sesamestreet.MuppetDiscoveryServiceTests" name="testLookForPerfectAndRelatedMuppets" time="0.078">
+          <failure message="Assertion failed: &#xa;&#xa;assert 3 == relatedMuppets.size()&#xa;         |  |              |&#xa;         |  |              5&#xa;         |  [sesamestreet.Muppet : 1, sesamestreet.Muppet : 2, sesamestreet.Muppet : 3, sesamestreet.Muppet : 4, sesamestreet.Muppet : 8]&#xa;         false&#xa;" type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError: Assertion failed: 
+
+assert 3 == relatedMuppets.size()
+         |  |              |
+         |  |              5
+         |  [sesamestreet.Muppet : 1, sesamestreet.Muppet : 2, sesamestreet.Muppet : 3, sesamestreet.Muppet : 4, sesamestreet.Muppet : 8]
+         false
+
+	at sesamestreet.MuppetDiscoveryServiceTests.testLookForPerfectAndRelatedMuppets(MuppetDiscoveryServiceTests.groovy:36)
+</failure>
+
+      </testcase>
+
+      <system-out><![CDATA[--Output from testLookForPerfectAndRelatedMuppets--
+Hibernate: insert into muppet (id, version, about, color, gender, has_fur, name, picture) values (null, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: insert into muppet (id, version, about, color, gender, has_fur, name, picture) values (null, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: insert into muppet (id, version, about, color, gender, has_fur, name, picture) values (null, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: insert into muppet (id, version, about, color, gender, has_fur, name, picture) values (null, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: insert into muppet (id, version, about, color, gender, has_fur, name, picture) values (null, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: insert into muppet (id, version, about, color, gender, has_fur, name, picture) values (null, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: select this_.id as id1_0_0_, this_.version as version2_0_0_, this_.about as about3_0_0_, this_.color as color4_0_0_, this_.gender as gender5_0_0_, this_.has_fur as has_fur6_0_0_, this_.name as name7_0_0_, this_.picture as picture8_0_0_ from muppet this_ where (lower(this_.color)=? and this_.has_fur=?) limit ?
+Hibernate: select this_.id as id1_0_0_, this_.version as version2_0_0_, this_.about as about3_0_0_, this_.color as color4_0_0_, this_.gender as gender5_0_0_, this_.has_fur as has_fur6_0_0_, this_.name as name7_0_0_, this_.picture as picture8_0_0_ from muppet this_ where (this_.color like ? or this_.has_fur=?)
+]]></system-out>
+
+      <system-err><![CDATA[--Output from testLookForPerfectAndRelatedMuppets--
+]]></system-err>
+
+  </testsuite>
+  <testsuite errors="0" failures="0" hostname="satellite-z30-a" id="2" name="MuppetIntegrationSpec" package="sesamestreet" tests="1" time="0.058" timestamp="2015-04-08T22:28:57">
+      <properties />
+
+      <testcase classname="sesamestreet.MuppetIntegrationSpec" name="test save several muppets" time="0.057" />
+
+      <system-out><![CDATA[--Output from test save several muppets--
+Hibernate: insert into muppet (id, version, about, color, gender, has_fur, name, picture) values (null, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: insert into muppet (id, version, about, color, gender, has_fur, name, picture) values (null, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: insert into muppet (id, version, about, color, gender, has_fur, name, picture) values (null, ?, ?, ?, ?, ?, ?, ?)
+]]></system-out>
+
+      <system-err><![CDATA[--Output from test save several muppets--
+]]></system-err>
+
+  </testsuite>
+  <testsuite errors="0" failures="0" hostname="satellite-z30-a" id="3" name="MuppetTests" package="sesamestreet" tests="1" time="0.067" timestamp="2015-04-08T22:28:57">
+      <properties />
+
+      <testcase classname="sesamestreet.MuppetTests" name="testSaveMuppets" time="0.04" />
+
+      <system-out><![CDATA[--Output from testSaveMuppets--
+Hibernate: select count(*) as y0_ from muppet this_
+Hibernate: insert into muppet (id, version, about, color, gender, has_fur, name, picture) values (null, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: select count(*) as y0_ from muppet this_
+]]></system-out>
+
+      <system-err><![CDATA[--Output from testSaveMuppets--
+]]></system-err>
+
+  </testsuite>
+  <testsuite errors="0" failures="0" hostname="satellite-z30-a" id="4" name="MuppetDiscoveryControllerUnitTests" package="sesamestreet" tests="2" time="2.129" timestamp="2015-04-08T22:28:43">
+      <properties />
+
+      <testcase classname="sesamestreet.MuppetDiscoveryControllerUnitTests" name="testNotFoundPerfectMuppet" time="2.001" />
+
+      <testcase classname="sesamestreet.MuppetDiscoveryControllerUnitTests" name="testFoundPerfectMuppet" time="0.069" />
+
+      <system-out><![CDATA[--Output from testNotFoundPerfectMuppet--
+--Output from testFoundPerfectMuppet--
+]]></system-out>
+
+      <system-err><![CDATA[--Output from testNotFoundPerfectMuppet--
+--Output from testFoundPerfectMuppet--
+]]></system-err>
+
+  </testsuite>
+  <testsuite errors="0" failures="0" hostname="satellite-z30-a" id="5" name="MuppetDiscoveryServiceUnitTests" package="sesamestreet" tests="1" time="5.243" timestamp="2015-04-08T22:28:38">
+      <properties />
+
+      <testcase classname="sesamestreet.MuppetDiscoveryServiceUnitTests" name="testLookForPerfectAndRelatedMuppets" time="5.157" />
+
+      <system-out><![CDATA[--Output from testLookForPerfectAndRelatedMuppets--
+]]></system-out>
+
+      <system-err><![CDATA[--Output from testLookForPerfectAndRelatedMuppets--
+]]></system-err>
+
+  </testsuite>
+  <testsuite errors="0" failures="0" hostname="satellite-z30-a" id="6" name="MuppetUnitSpec" package="sesamestreet" tests="3" time="0.399" timestamp="2015-04-08T22:28:45">
+      <properties />
+
+      <testcase classname="sesamestreet.MuppetUnitSpec" name="Ernie validates OK" time="0.181" />
+
+      <testcase classname="sesamestreet.MuppetUnitSpec" name="Bert fails on validate" time="0.035" />
+
+      <testcase classname="sesamestreet.MuppetUnitSpec" name="validate several of them" time="0.168" />
+
+      <system-out><![CDATA[--Output from Ernie validates OK--
+--Output from Bert fails on validate--
+--Output from validate several of them--
+]]></system-out>
+
+      <system-err><![CDATA[--Output from Ernie validates OK--
+--Output from Bert fails on validate--
+--Output from validate several of them--
+]]></system-err>
+
+  </testsuite>
+  <testsuite errors="0" failures="0" hostname="satellite-z30-a" id="7" name="MuppetUnitTests" package="sesamestreet" tests="1" time="0.273" timestamp="2015-04-08T22:28:43">
+      <properties />
+
+      <testcase classname="sesamestreet.MuppetUnitTests" name="testSomeCharacters" time="0.249" />
+
+      <system-out><![CDATA[--Output from testSomeCharacters--
+]]></system-out>
+
+      <system-err><![CDATA[--Output from testSomeCharacters--
+]]></system-err>
+
+  </testsuite>
+</testsuites>

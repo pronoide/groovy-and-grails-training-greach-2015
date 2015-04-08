@@ -1,0 +1,549 @@
+<!DOCTYPE html><html xmlns:lxslt="http://xml.apache.org/xslt" xmlns:stringutils="xalan://org.apache.tools.ant.util.StringUtils">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>
+        Unit Test Results
+     - All tests</title>
+<link href="stylesheet.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+<div id="report" class="container container_8">
+<div class="grid_6 alpha">
+<div class="grailslogo"></div>
+<h1>
+        Unit Test Results
+     - All tests </h1>
+<p class="intro">
+                        Executed
+                        12
+                        tests
+                    
+                        with
+                        one failure
+                        .
+                    </p>
+</div>
+<div class="grid_2 omega">
+<nav id="navigationlinks">
+<p>
+<a href="failed.html">
+                    Tests with failure and errors
+                </a>
+</p>
+<p>
+<a href="index.html">
+                    Package summary
+                </a>
+</p>
+<p>
+<a href="all.html">
+                    Show all tests
+                </a>
+</p>
+</nav>
+</div>
+<div class="clear"></div>
+<div class="testsuite failure">
+<div class="header">
+<h2>MuppetDiscoveryServiceTests</h2>
+<h3>
+                        A single test executed
+                    
+                        with
+                        one failure
+                        .
+                    </h3>
+</div>
+<div class="testcase clearfix failure grid_8 alpha omega" data-name="testLookForPerfectAndRelatedMuppets">
+<div class="grid_3 alpha">
+<p>
+<span class="icon failure"></span><b class="testname message failure">testLookForPerfectAndRelatedMuppets</b>
+</p>
+<p class="summary">Executed in 0.078 seconds.</p>
+</div>
+<div class="grid_5 omega outputinfo">
+<div class="details">
+<p>
+<b class="message">Assertion failed: 
+
+assert 3 == relatedMuppets.size()
+         |  |              |
+         |  |              5
+         |  [sesamestreet.Muppet : 1, sesamestreet.Muppet : 2, sesamestreet.Muppet : 3, sesamestreet.Muppet : 4, sesamestreet.Muppet : 8]
+         false
+</b>
+</p>
+<pre>junit.framework.AssertionFailedError: Assertion failed: 
+
+assert 3 == relatedMuppets.size()
+         |  |              |
+         |  |              5
+         |  [sesamestreet.Muppet : 1, sesamestreet.Muppet : 2, sesamestreet.Muppet : 3, sesamestreet.Muppet : 4, sesamestreet.Muppet : 8]
+         false
+
+	at sesamestreet.MuppetDiscoveryServiceTests.testLookForPerfectAndRelatedMuppets(MuppetDiscoveryServiceTests.groovy:36)
+</pre>
+</div>
+</div>
+<div class="clear"></div>
+</div>
+<div class="clearfix output footer">
+<div class="sysout">
+<h2>Standard output</h2>
+<pre class="stdout">--Output from testLookForPerfectAndRelatedMuppets--
+Hibernate: insert into muppet (id, version, about, color, gender, has_fur, name, picture) values (null, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: insert into muppet (id, version, about, color, gender, has_fur, name, picture) values (null, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: insert into muppet (id, version, about, color, gender, has_fur, name, picture) values (null, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: insert into muppet (id, version, about, color, gender, has_fur, name, picture) values (null, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: insert into muppet (id, version, about, color, gender, has_fur, name, picture) values (null, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: insert into muppet (id, version, about, color, gender, has_fur, name, picture) values (null, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: select this_.id as id1_0_0_, this_.version as version2_0_0_, this_.about as about3_0_0_, this_.color as color4_0_0_, this_.gender as gender5_0_0_, this_.has_fur as has_fur6_0_0_, this_.name as name7_0_0_, this_.picture as picture8_0_0_ from muppet this_ where (lower(this_.color)=? and this_.has_fur=?) limit ?
+Hibernate: select this_.id as id1_0_0_, this_.version as version2_0_0_, this_.about as about3_0_0_, this_.color as color4_0_0_, this_.gender as gender5_0_0_, this_.has_fur as has_fur6_0_0_, this_.name as name7_0_0_, this_.picture as picture8_0_0_ from muppet this_ where (this_.color like ? or this_.has_fur=?)
+</pre>
+</div>
+<div class="syserr">
+<h2>System error</h2>
+<pre class="syserr">--Output from testLookForPerfectAndRelatedMuppets--
+</pre>
+</div>
+</div>
+<div class="clear"></div>
+</div>
+<div class="testsuite success">
+<div class="header">
+<h2>MuppetDiscoveryControllerTests</h2>
+<h3>
+                        Executed
+                        2
+                        tests
+                    
+                        without a single error or failure!
+                    </h3>
+</div>
+<div class="testcase clearfix success grid_8 alpha omega" data-name="testNotFoundPerfectMuppet">
+<div class="grid_3 alpha">
+<p>
+<span class="icon success"></span><b class="testname message success">testNotFoundPerfectMuppet</b>
+</p>
+<p class="summary">Executed in 1.549 seconds.</p>
+</div>
+<div class="grid_5 omega outputinfo"></div>
+<div class="clear"></div>
+</div>
+<div class="testcase clearfix success grid_8 alpha omega" data-name="testFoundPerfectMuppet">
+<div class="grid_3 alpha">
+<p>
+<span class="icon success"></span><b class="testname message success">testFoundPerfectMuppet</b>
+</p>
+<p class="summary">Executed in 0.034 seconds.</p>
+</div>
+<div class="grid_5 omega outputinfo"></div>
+<div class="clear"></div>
+</div>
+<div class="clearfix output footer">
+<div class="sysout">
+<h2>Standard output</h2>
+<pre class="stdout">--Output from testNotFoundPerfectMuppet--
+Hibernate: insert into muppet (id, version, about, color, gender, has_fur, name, picture) values (null, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: select this_.id as id1_0_0_, this_.version as version2_0_0_, this_.about as about3_0_0_, this_.color as color4_0_0_, this_.gender as gender5_0_0_, this_.has_fur as has_fur6_0_0_, this_.name as name7_0_0_, this_.picture as picture8_0_0_ from muppet this_ where (lower(this_.color)=? and this_.has_fur=?) limit ?
+Hibernate: select this_.id as id1_0_0_, this_.version as version2_0_0_, this_.about as about3_0_0_, this_.color as color4_0_0_, this_.gender as gender5_0_0_, this_.has_fur as has_fur6_0_0_, this_.name as name7_0_0_, this_.picture as picture8_0_0_ from muppet this_ where (this_.color like ? or this_.has_fur=?)
+--Output from testFoundPerfectMuppet--
+Hibernate: insert into muppet (id, version, about, color, gender, has_fur, name, picture) values (null, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: select this_.id as id1_0_0_, this_.version as version2_0_0_, this_.about as about3_0_0_, this_.color as color4_0_0_, this_.gender as gender5_0_0_, this_.has_fur as has_fur6_0_0_, this_.name as name7_0_0_, this_.picture as picture8_0_0_ from muppet this_ where (lower(this_.color)=? and this_.has_fur=?) limit ?
+</pre>
+</div>
+<div class="syserr">
+<h2>System error</h2>
+<pre class="syserr">--Output from testNotFoundPerfectMuppet--
+--Output from testFoundPerfectMuppet--
+</pre>
+</div>
+</div>
+<div class="clear"></div>
+</div>
+<div class="testsuite success">
+<div class="header">
+<h2>MuppetDiscoveryControllerUnitTests</h2>
+<h3>
+                        Executed
+                        2
+                        tests
+                    
+                        without a single error or failure!
+                    </h3>
+</div>
+<div class="testcase clearfix success grid_8 alpha omega" data-name="testNotFoundPerfectMuppet">
+<div class="grid_3 alpha">
+<p>
+<span class="icon success"></span><b class="testname message success">testNotFoundPerfectMuppet</b>
+</p>
+<p class="summary">Executed in 2.001 seconds.</p>
+</div>
+<div class="grid_5 omega outputinfo"></div>
+<div class="clear"></div>
+</div>
+<div class="testcase clearfix success grid_8 alpha omega" data-name="testFoundPerfectMuppet">
+<div class="grid_3 alpha">
+<p>
+<span class="icon success"></span><b class="testname message success">testFoundPerfectMuppet</b>
+</p>
+<p class="summary">Executed in 0.069 seconds.</p>
+</div>
+<div class="grid_5 omega outputinfo"></div>
+<div class="clear"></div>
+</div>
+<div class="clearfix output footer">
+<div class="sysout">
+<h2>Standard output</h2>
+<pre class="stdout">--Output from testNotFoundPerfectMuppet--
+--Output from testFoundPerfectMuppet--
+</pre>
+</div>
+<div class="syserr">
+<h2>System error</h2>
+<pre class="syserr">--Output from testNotFoundPerfectMuppet--
+--Output from testFoundPerfectMuppet--
+</pre>
+</div>
+</div>
+<div class="clear"></div>
+</div>
+<div class="testsuite success">
+<div class="header">
+<h2>MuppetDiscoveryServiceUnitTests</h2>
+<h3>
+                        A single test executed
+                    
+                        without a single error or failure!
+                    </h3>
+</div>
+<div class="testcase clearfix success grid_8 alpha omega" data-name="testLookForPerfectAndRelatedMuppets">
+<div class="grid_3 alpha">
+<p>
+<span class="icon success"></span><b class="testname message success">testLookForPerfectAndRelatedMuppets</b>
+</p>
+<p class="summary">Executed in 5.157 seconds.</p>
+</div>
+<div class="grid_5 omega outputinfo"></div>
+<div class="clear"></div>
+</div>
+<div class="clearfix output footer">
+<div class="sysout">
+<h2>Standard output</h2>
+<pre class="stdout">--Output from testLookForPerfectAndRelatedMuppets--
+</pre>
+</div>
+<div class="syserr">
+<h2>System error</h2>
+<pre class="syserr">--Output from testLookForPerfectAndRelatedMuppets--
+</pre>
+</div>
+</div>
+<div class="clear"></div>
+</div>
+<div class="testsuite success">
+<div class="header">
+<h2>MuppetIntegrationSpec</h2>
+<h3>
+                        A single test executed
+                    
+                        without a single error or failure!
+                    </h3>
+</div>
+<div class="testcase clearfix success grid_8 alpha omega" data-name="test save several muppets">
+<div class="grid_3 alpha">
+<p>
+<span class="icon success"></span><b class="testname message success">test save several muppets</b>
+</p>
+<p class="summary">Executed in 0.057 seconds.</p>
+</div>
+<div class="grid_5 omega outputinfo"></div>
+<div class="clear"></div>
+</div>
+<div class="clearfix output footer">
+<div class="sysout">
+<h2>Standard output</h2>
+<pre class="stdout">--Output from test save several muppets--
+Hibernate: insert into muppet (id, version, about, color, gender, has_fur, name, picture) values (null, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: insert into muppet (id, version, about, color, gender, has_fur, name, picture) values (null, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: insert into muppet (id, version, about, color, gender, has_fur, name, picture) values (null, ?, ?, ?, ?, ?, ?, ?)
+</pre>
+</div>
+<div class="syserr">
+<h2>System error</h2>
+<pre class="syserr">--Output from test save several muppets--
+</pre>
+</div>
+</div>
+<div class="clear"></div>
+</div>
+<div class="testsuite success">
+<div class="header">
+<h2>MuppetTests</h2>
+<h3>
+                        A single test executed
+                    
+                        without a single error or failure!
+                    </h3>
+</div>
+<div class="testcase clearfix success grid_8 alpha omega" data-name="testSaveMuppets">
+<div class="grid_3 alpha">
+<p>
+<span class="icon success"></span><b class="testname message success">testSaveMuppets</b>
+</p>
+<p class="summary">Executed in 0.04 seconds.</p>
+</div>
+<div class="grid_5 omega outputinfo"></div>
+<div class="clear"></div>
+</div>
+<div class="clearfix output footer">
+<div class="sysout">
+<h2>Standard output</h2>
+<pre class="stdout">--Output from testSaveMuppets--
+Hibernate: select count(*) as y0_ from muppet this_
+Hibernate: insert into muppet (id, version, about, color, gender, has_fur, name, picture) values (null, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: select count(*) as y0_ from muppet this_
+</pre>
+</div>
+<div class="syserr">
+<h2>System error</h2>
+<pre class="syserr">--Output from testSaveMuppets--
+</pre>
+</div>
+</div>
+<div class="clear"></div>
+</div>
+<div class="testsuite success">
+<div class="header">
+<h2>MuppetUnitSpec</h2>
+<h3>
+                        Executed
+                        3
+                        tests
+                    
+                        without a single error or failure!
+                    </h3>
+</div>
+<div class="testcase clearfix success grid_8 alpha omega" data-name="Ernie validates OK">
+<div class="grid_3 alpha">
+<p>
+<span class="icon success"></span><b class="testname message success">Ernie validates OK</b>
+</p>
+<p class="summary">Executed in 0.181 seconds.</p>
+</div>
+<div class="grid_5 omega outputinfo"></div>
+<div class="clear"></div>
+</div>
+<div class="testcase clearfix success grid_8 alpha omega" data-name="Bert fails on validate">
+<div class="grid_3 alpha">
+<p>
+<span class="icon success"></span><b class="testname message success">Bert fails on validate</b>
+</p>
+<p class="summary">Executed in 0.035 seconds.</p>
+</div>
+<div class="grid_5 omega outputinfo"></div>
+<div class="clear"></div>
+</div>
+<div class="testcase clearfix success grid_8 alpha omega" data-name="validate several of them">
+<div class="grid_3 alpha">
+<p>
+<span class="icon success"></span><b class="testname message success">validate several of them</b>
+</p>
+<p class="summary">Executed in 0.168 seconds.</p>
+</div>
+<div class="grid_5 omega outputinfo"></div>
+<div class="clear"></div>
+</div>
+<div class="clearfix output footer">
+<div class="sysout">
+<h2>Standard output</h2>
+<pre class="stdout">--Output from Ernie validates OK--
+--Output from Bert fails on validate--
+--Output from validate several of them--
+</pre>
+</div>
+<div class="syserr">
+<h2>System error</h2>
+<pre class="syserr">--Output from Ernie validates OK--
+--Output from Bert fails on validate--
+--Output from validate several of them--
+</pre>
+</div>
+</div>
+<div class="clear"></div>
+</div>
+<div class="testsuite success">
+<div class="header">
+<h2>MuppetUnitTests</h2>
+<h3>
+                        A single test executed
+                    
+                        without a single error or failure!
+                    </h3>
+</div>
+<div class="testcase clearfix success grid_8 alpha omega" data-name="testSomeCharacters">
+<div class="grid_3 alpha">
+<p>
+<span class="icon success"></span><b class="testname message success">testSomeCharacters</b>
+</p>
+<p class="summary">Executed in 0.249 seconds.</p>
+</div>
+<div class="grid_5 omega outputinfo"></div>
+<div class="clear"></div>
+</div>
+<div class="clearfix output footer">
+<div class="sysout">
+<h2>Standard output</h2>
+<pre class="stdout">--Output from testSomeCharacters--
+</pre>
+</div>
+<div class="syserr">
+<h2>System error</h2>
+<pre class="syserr">--Output from testSomeCharacters--
+</pre>
+</div>
+</div>
+<div class="clear"></div>
+</div>
+<div class="clear"></div>
+</div>
+<!--
+            Parses JUnit output and associates it with the corresponding test case
+        -->
+<script language="javascript">
+
+
+/**
+ * The JUnit report format is incredibly stuipd in the
+ * sense that it accumulates output from all test methods
+ * into a single xml node.
+ */
+(function() {
+
+    var outputElements = findOutputElements();
+    for (var i in outputElements) {
+        var outputElement = outputElements[i];
+        var textOutput = outputElement.element.firstChild.nodeValue;
+        var header = outputElement.getHeader();
+        appendTestMethodOutput(textOutput, header);
+    }
+
+    function findOutputElements() {
+        var outputElements = [];
+        var preElements = document.getElementsByTagName("pre");
+        for (var i in preElements) {
+            var preElement = preElements[i];
+            var className = preElement.className || "";
+            if (className.indexOf("stdout") >= 0) {
+                var outputElement = new OutputElement(preElement, "output");
+                outputElements.push(outputElement);
+            } else if (className.indexOf("syserr") >= 0) {
+                var outputElement = new OutputElement(preElement, "error");
+                outputElements.push(outputElement);
+            }
+        }
+
+        return outputElements;
+    }
+
+    function OutputElement(element, type) {
+        this.element = element;
+        this.type = type;
+
+        this.getHeader = function() {
+            if (type === "output") {
+                return "System output";
+            } else if ("error") {
+                return "System error";
+            }
+        }
+    }
+
+    function appendTestMethodOutput(text, header) {
+        var testOutput = new TestMethodOutput(header);
+
+        var lines = text.split(/\r\n|\r|\n/);
+        for (var i in lines) {
+            var line = lines[i];
+            var matches = line.match(/^--Output from (.*)--$/);
+            if (matches !== null && matches.length == 2) {
+                testOutput.flushToDom();
+                testOutput.testName = matches[1];
+            } else {
+                testOutput.addLine(line);
+            }
+        }
+
+        testOutput.flushToDom();
+    }
+
+    function TestMethodOutput(header) {
+        this.header = header;
+        this.testName = undefined;
+        this.buffer = "";
+
+        this.addLine = function(line) {
+            this.buffer += line + "\n";
+        }
+
+        this.flushToDom = function() {
+            if (this.testName !== undefined) {
+                var domNode = getTestcaseElementByName(this.testName);
+                if (domNode !== undefined && trimString(this.buffer).length > 0) {
+                    this.appendTo(domNode);
+                }
+
+                this.reset();
+            }
+        }
+
+        this.appendTo = function(domNode) {
+            var node = document.createElement("div");
+            node.innerHTML = '<p><b class="message">' + header + '</b></p>';
+
+            var preNode = document.createElement("pre");
+            preNode.appendChild(document.createTextNode(this.buffer));
+            node.appendChild(preNode);
+
+            var outputContainer = findElementByTagClassAndParent("div", "outputinfo", domNode);
+            outputContainer.appendChild(node);
+        }
+
+        this.reset = function() {
+            this.methodName = undefined;
+            this.buffer = "";
+        }
+    }
+
+    function getTestcaseElementByName(name) {
+        var divElements = document.getElementsByTagName("div");
+        var elementCount = divElements.length;
+        for (var i=0; i<elementCount; i++) {
+            var el = divElements[i];
+            if (el.getAttribute("data-name") === name) {
+                return el;
+            }
+        }
+    }
+
+    function findElementByTagClassAndParent(tagName, className, parentNode) {
+        var elements = parentNode.getElementsByTagName(tagName);
+        for (var i in elements) {
+            var element = elements[i];
+
+            // Not 100% correct, but good enough here
+            if (element.className !== undefined && element.className.indexOf(className) >= 0) {
+                return element;
+            }
+        }
+    }
+
+    function trimString(str) {
+        return str.replace(/^\s\s*/, '').replace(/\s\s*$/, '');
+    }
+
+})();
+
+        </script>
+</body>
+</html>

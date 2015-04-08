@@ -1,0 +1,4 @@
+--Output from testSaveMuppets--
+Hibernate: select count(*) as y0_ from muppet this_
+Hibernate: insert into muppet (id, version, about, color, gender, has_fur, name, picture) values (null, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: select count(*) as y0_ from muppet this_

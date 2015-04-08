@@ -1,0 +1,16 @@
+Testsuite: sesamestreet.MuppetUnitSpec
+Tests run: 3, Failures: 0, Errors: 0, Time elapsed: 0,399 sec
+------------- Standard Output ---------------
+--Output from Ernie validates OK--
+--Output from Bert fails on validate--
+--Output from validate several of them--
+------------- ---------------- ---------------
+------------- Standard Error -----------------
+--Output from Ernie validates OK--
+--Output from Bert fails on validate--
+--Output from validate several of them--
+------------- ---------------- ---------------
+
+Testcase: Ernie validates OK took 0,181 sec
+Testcase: Bert fails on validate took 0,035 sec
+Testcase: validate several of them took 0,168 sec

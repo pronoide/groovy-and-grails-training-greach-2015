@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuite errors="0" failures="0" hostname="satellite-z30-a" name="sesamestreet.MuppetTests" tests="1" time="0.067" timestamp="2015-04-08T22:28:57">
+  <properties />
+  <testcase classname="sesamestreet.MuppetTests" name="testSaveMuppets" time="0.04" />
+  <system-out><![CDATA[--Output from testSaveMuppets--
+Hibernate: select count(*) as y0_ from muppet this_
+Hibernate: insert into muppet (id, version, about, color, gender, has_fur, name, picture) values (null, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: select count(*) as y0_ from muppet this_
+]]></system-out>
+  <system-err><![CDATA[--Output from testSaveMuppets--
+]]></system-err>
+</testsuite>

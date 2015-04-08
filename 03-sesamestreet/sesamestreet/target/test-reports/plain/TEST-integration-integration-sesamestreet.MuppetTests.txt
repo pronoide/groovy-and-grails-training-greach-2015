@@ -1,0 +1,13 @@
+Testsuite: sesamestreet.MuppetTests
+Tests run: 1, Failures: 0, Errors: 0, Time elapsed: 0,067 sec
+------------- Standard Output ---------------
+--Output from testSaveMuppets--
+Hibernate: select count(*) as y0_ from muppet this_
+Hibernate: insert into muppet (id, version, about, color, gender, has_fur, name, picture) values (null, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: select count(*) as y0_ from muppet this_
+------------- ---------------- ---------------
+------------- Standard Error -----------------
+--Output from testSaveMuppets--
+------------- ---------------- ---------------
+
+Testcase: testSaveMuppets took 0,041 sec

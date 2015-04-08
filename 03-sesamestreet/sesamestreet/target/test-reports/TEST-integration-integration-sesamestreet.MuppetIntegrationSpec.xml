@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuite errors="0" failures="0" hostname="satellite-z30-a" name="sesamestreet.MuppetIntegrationSpec" tests="1" time="0.058" timestamp="2015-04-08T22:28:57">
+  <properties />
+  <testcase classname="sesamestreet.MuppetIntegrationSpec" name="test save several muppets" time="0.057" />
+  <system-out><![CDATA[--Output from test save several muppets--
+Hibernate: insert into muppet (id, version, about, color, gender, has_fur, name, picture) values (null, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: insert into muppet (id, version, about, color, gender, has_fur, name, picture) values (null, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: insert into muppet (id, version, about, color, gender, has_fur, name, picture) values (null, ?, ?, ?, ?, ?, ?, ?)
+]]></system-out>
+  <system-err><![CDATA[--Output from test save several muppets--
+]]></system-err>
+</testsuite>
